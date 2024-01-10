@@ -54,7 +54,7 @@
         <li>国際規格では、既定の文字セットを「ISO 8859-1」として処理します</li>
         <li>日本産業規格では、既定の文字セットを「シフトJIS」として処理します</li>
         <li>文字セットがリーダーの既定と異なる場合は文字化けすることがあります</li>
-        <li>シンボル周囲の余白（4モジュール分）はリーダー向けなので削らないでください</li>
+        <li>シンボル周囲の余白（4モジュール分）はリーダー用に必要なので削らないでください</li>
         <li>誤り訂正はレベル L,M,Q,H の順にQRコードの損壊に対して強くなります</li>
       </ul>
     </small>
@@ -2305,6 +2305,7 @@
           img.style.setProperty('margin', '0', priority);
           img.style.setProperty('padding', '32px', priority);
           img.style.setProperty('image-rendering', 'pixelated', priority);
+          img.style.setProperty('background-color', '#f8f8f8');
           return img;
       }
 
